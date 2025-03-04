@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webser - Website in ontwikkeling</title>
+    <meta
+      name="description"
+      content="Webser bouwt prachtige websites en future-proof webapps met krachtige technologie. Binnenkort beschikbaar – neem contact op!"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="keywords"
+      content="Webser, websites, webapps, full stack developer, digitale oplossingen"
+    />
+
+    <!-- Preload fonts for improved performance -->
+    <link
+      rel="preload"
+      href="./regular.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./semibold.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+
+    <!-- Favicon (optioneel) -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Webser",
+        "url": "https://webser.nl",
+        "logo": "https://webser.nl/icon.png",
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "telephone": "+31619858996",
+            "contactType": "customer support",
+            "email": "hoi@webser.nl"
+          }
+        ]
+      }
+    </script>
+
+    <style>
+      @font-face {
+        font-family: "Diodrum Arabic";
+        src: url("./regular.ttf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "Diodrum Arabic";
+        src: url("./semibold.ttf") format("truetype");
+        font-weight: 600;
+        font-style: normal;
+      }
+      /* Reset en basisinstellingen */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #0830ff;
+        color: white;
+        font-family: "Diodrum Arabic", sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        padding: 20px;
+      }
+      header,
+      main,
+      footer {
+        width: 100%;
+      }
+      .logo {
+        width: 120px; /* Pas de grootte aan indien nodig */
+        animation: zoom 8s ease-in-out infinite;
+      }
+      @keyframes zoom {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+      .content {
+        font-size: 40px;
+      }
+      .contact {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        font-size: 1rem;
+      }
+      .contact a {
+        color: white;
+        text-decoration: underline;
+      }
+      @media screen and (max-width: 800px) {
+        .logo {
+          width: 80px;
+        }
+        .content {
+          font-size: 36px;
+          line-height: 1.2;
+        }
+      }
+      @media screen and (max-width: 340px) {
+        .logo {
+          width: 80px;
+        }
+        .content {
+          font-size: 30px;
+          line-height: 1.2;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- Zorg dat je logo (bijv. "icon.png") in dezelfde map staat -->
+      <img src="icon.png" alt="Webser logo" class="logo" />
+    </header>
+    <main class="content">
+      <h2>Oplossingen voor morgen.</h2>
+    </main>
+    <footer class="contact">
+      <p>Email: <a href="mailto:hoi@webser.nl">hoi@webser.nl</a></p>
+      <p>Telefoon: <a href="tel:+31619858996">+31 619858996</a></p>
+    </footer>
+  </body>
+</html>
